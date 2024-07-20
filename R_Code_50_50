@@ -31,7 +31,7 @@ ABC_50_50$Cumulative_SKU3 <- cumsum(ABC_50_50$SKU3)
 ggplot(ABC_50_50, aes(x = Cumulative_SKU3, y = Cumulative_Sales3, label = Classification3)) +
   geom_point(size = 3) +  # Scatter plot points
   geom_text(vjust = -0.5, hjust = 0.8, color = "black", fontface = "bold") +
-  geom_smooth(method = "lm", se = FALSE, color = "blue") +
+  geom_smooth(method = "lm", se = FALSE, color = "grey") +
   labs(title = "50:50 Pareto - Cumulative Sales/SKU",
        x = "Cumulative_SKU (%)",
        y = "Cumulative_Sales (%)") +
