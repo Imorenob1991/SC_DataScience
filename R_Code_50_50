@@ -5,7 +5,7 @@ library(dplyr)
 library(tidyr)
 library(stringr)
 
-## 50:50 Example
+## 50:50 ABC Curve Example
 
 Classification3 <-c("Start","A","B","C")
 Sales3 <- c("0%","50%","30%","20%")
