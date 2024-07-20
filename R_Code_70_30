@@ -7,7 +7,7 @@ library(stringr)
 
 ## 70:30 ABC Curve Example
 
-Classification2 <-c("Start","A","B","C")
+Classification2 <-c("(0,0)","A","B","C")
 Sales2 <- c("0%","70%","20%","10%")
 SKU2 <- c("0%","30%","30%","40%")
 
@@ -27,8 +27,9 @@ ABC_70_30$Cumulative_SKU2 <- cumsum(ABC_70_30$SKU2)
 
 ### Plotting 70:30 Example
 
-ggplot(ABC_70_30, aes(x = Cumulative_SKU2, y = Cumulative_Sales2)) +
+ggplot(ABC_70_30, aes(x = Cumulative_SKU2, y = Cumulative_Sales2, label = Classification2)) +
   geom_point(size = 3) +  # Scatter plot points
+  geom_text(vjust = -0.5, hjust = 0.8, color = "black", fontface = "bold") +
   geom_smooth(method = "loess", se = FALSE, color ="grey") +
   labs(title = "70:30 Pareto - Cumulative Sales/SKU",
        x = "Cumulative_SKU (%)",
