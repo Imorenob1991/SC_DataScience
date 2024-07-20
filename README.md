@@ -18,6 +18,10 @@ Before defining the type of products, it is important to sort the database from 
 
 ## Graphical ABC Classification examples using the Pareto Principle
 
+### 80:20 Example of ABC Classification
+
+<img width="537" alt="Screenshot 2024-07-20 at 09 16 26" src="https://github.com/user-attachments/assets/3176d7f6-0b3c-4885-a446-99d710005ee6">
+
 
 
 
