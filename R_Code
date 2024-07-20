@@ -1,0 +1,39 @@
+# SC_Data_Science_ABC_Slotting
+
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(stringr)
+
+## Typical Example 80:20 Sales SKUs
+
+Classification <-c("Start","A","B","C")
+Sales <- c("0%","80%","15%","5%")
+SKU <- c("0%","20%","30%","50%")
+
+ABC_80_20 <- data.frame(Classification,Sales, SKU)
+
+glimpse(ABC_80_20)
+
+ABC_80_20$Sales <- str_remove(ABC_80_20$Sales,"%")
+ABC_80_20$SKU <- str_remove(ABC_80_20$SKU,"%")
+
+ABC_80_20$Sales <- as.numeric(ABC_80_20$Sales)
+ABC_80_20$SKU <- as.numeric(ABC_80_20$SKU)
+
+### Calculate the cumulative sum of Sales and SKUs
+ABC_80_20$Cumulative_Sales <- cumsum(ABC_80_20$Sales)
+ABC_80_20$Cumulative_SKU <- cumsum(ABC_80_20$SKU)
+
+### Plotting 80:20 Example
+
+ggplot(ABC_80_20, aes(x = Cumulative_SKU, y = Cumulative_Sales)) +
+  geom_point(size = 3) +  # Scatter plot points
+  geom_smooth(method = "loess", se = FALSE, color ="grey") +
+  labs(title = "80:20 Pareto - Cumulative Sales/SKU",
+       x = "Cumulative_SKU (%)",
+       y = "Cumulative_Sales (%)") +
+  scale_x_continuous(limits = c(0, 100), breaks = seq(0, 100, by = 10)) +  # Set x-axis limit and breaks
+  scale_y_continuous(limits = c(0, 100), breaks = seq(0, 100, by = 10)) +  # Set y-axis limit and breaks
+  theme_minimal()
