@@ -1,0 +1,39 @@
+# SC_Data_Science_ABC_Slotting
+
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(stringr)
+
+## 50:50 Example
+
+Classification3 <-c("Start","A","B","C")
+Sales3 <- c("0%","50%","30%","20%")
+SKU3 <- c("0%","50%","30%","20%")
+
+ABC_50_50 <- data.frame(Classification3,Sales3, SKU3)
+
+glimpse(ABC_50_50)
+
+ABC_50_50$Sales3 <- str_remove(ABC_50_50$Sales3,"%")
+ABC_50_50$SKU3 <- str_remove(ABC_50_50$SKU3,"%")
+
+ABC_50_50$Sales3 <- as.numeric(ABC_50_50$Sales3)
+ABC_50_50$SKU3 <- as.numeric(ABC_50_50$SKU3)
+
+### Calculate the cumulative sum of Sales and SKUs
+
+ABC_50_50$Cumulative_Sales3 <- cumsum(ABC_50_50$Sales3)
+ABC_50_50$Cumulative_SKU3 <- cumsum(ABC_50_50$SKU3)
+
+### Plotting 50:50 Example
+
+ggplot(ABC_50_50, aes(x = Cumulative_SKU3, y = Cumulative_Sales3)) +
+  geom_point(size = 3) +  # Scatter plot points
+  geom_smooth(method = "loess", se = FALSE, color ="grey") +
+  labs(title = "50:50 Pareto - Cumulative Sales/SKU",
+       x = "Cumulative_SKU (%)",
+       y = "Cumulative_Sales (%)") +
+  scale_x_continuous(limits = c(0, 100), breaks = seq(0, 100, by = 10)) +  # Set x-axis limit and breaks
+  scale_y_continuous(limits = c(0, 100), breaks = seq(0, 100, by = 10)) +  # Set y-axis limit and breaks
+  theme_minimal()
