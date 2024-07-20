@@ -41,7 +41,7 @@ Insights and potential analysis:
 Descriptive Analysis:
 - Type A Product: 30% of SKUs represent the 70% of total sales and are fast moving goods.
 - Type B Products: 30% of SKUs represent the 20% of total sales and are regular moving goods.
-- Type C Products: 20% of SKUs represent the 10% of the total sales and are slow moving goods.
+- Type C Products: 40% of SKUs represent the 10% of the total sales and are slow moving goods.
 
 Insights and potential analysis:
 - As the same as the 80:20 curve, the type A products are recomended to be stored in a zone that minimices the transit picking time.
