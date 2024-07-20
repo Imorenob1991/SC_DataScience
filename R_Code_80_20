@@ -5,9 +5,9 @@ library(dplyr)
 library(tidyr)
 library(stringr)
 
-## 80:20 ABC Curve Example
+## 80:20 Example
 
-Classification <-c("Start","A","B","C")
+Classification <-c("(0,0)","A","B","C")
 Sales <- c("0%","80%","15%","5%")
 SKU <- c("0%","20%","30%","50%")
 
@@ -27,8 +27,9 @@ ABC_80_20$Cumulative_SKU <- cumsum(ABC_80_20$SKU)
 
 ### Plotting 80:20 Example
 
-ggplot(ABC_80_20, aes(x = Cumulative_SKU, y = Cumulative_Sales)) +
+ggplot(ABC_80_20, aes(x = Cumulative_SKU, y = Cumulative_Sales, label = Classification)) +
   geom_point(size = 3) +  # Scatter plot points
+  geom_text(vjust = -0.5, hjust = 1.2, color = "blue") +
   geom_smooth(method = "loess", se = FALSE, color ="grey") +
   labs(title = "80:20 Pareto - Cumulative Sales/SKU",
        x = "Cumulative_SKU (%)",
