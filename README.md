@@ -22,7 +22,7 @@ The most common curve is going to be represented by the 80:20 rule , but regardi
 
 ### 80:20 Example of ABC Classification
 
-<img width="612" alt="image" src="https://github.com/user-attachments/assets/9e6d0fc3-2a74-4902-a83f-297b9c756c7b">
+<img width="589" alt="80_20" src="https://github.com/user-attachments/assets/558804a0-36e0-48a8-854e-bf7dbd4d5801">
 
 Descriptive Analysis:
 - Type A Product: 20% of SKUs represent the 80% of total sales and are fast moving goods.
@@ -30,14 +30,53 @@ Descriptive Analysis:
 - Type C Products: 50% of SKUs represent the 5% of the total sales and are slow moving goods.
 
 Insights and potential analysis:
-- It is recommended that fast moving goods or Type A Products have to be stored in the ubication that require minimun store or warehouse transits, regarding of the Layout.
+- It is recommended that fast moving goods or Type A Products have to be stored in an ubication that minimizes the picking transit time (warehouse or stores), this fast moving goods zone may variate regarding of the Layout.
 - Additionally, the A Products have a high possibility of being sold, so we can decide to stock these type of products in a location closer to our clients to improve our service level.
-- This type of curve is suitable for Autostore Automation Goods to Person Technology, but we need to dip dive in other factors like the logistics variables and the size of the products (Autostore is suitable for small items)
+- Automation: This type of curve is suitable for Autostore Automation Goods to Person Technology, but we need to dip dive in other factors like the logistics variables and the size of the products (Autostore is suitable for small items). Also AGV (Automated Guided Vehicles) may apply for this type of curve.
 
-- 
+### 70:30 Example of ABC Classification
 
+<img width="676" alt="70_30" src="https://github.com/user-attachments/assets/4a0f75ba-6bec-4dd4-b59d-34024cc628d3">
 
+Descriptive Analysis:
+- Type A Product: 30% of SKUs represent the 70% of total sales and are fast moving goods.
+- Type B Products: 30% of SKUs represent the 20% of total sales and are regular moving goods.
+- Type C Products: 20% of SKUs represent the 10% of the total sales and are slow moving goods.
 
+Insights and potential analysis:
+- As the same as the 80:20 curve, the type A products are recomended to be stored in a zone that minimices the transit picking time.
+- Automation: In the same case as 80:20 curve, the technologies that can apply to an evaluation are Autostore and AGVs Goods to Person technology. By the way, this curve will make these technology less competitive in comparison to traditionall manual shelves picking.
+
+### 50:50 Example of ABC Classification
+
+<img width="675" alt="50_50" src="https://github.com/user-attachments/assets/07575a59-50fb-4171-9734-614f9514198d">
+
+Descriptive Analysis:
+- Type A Product: 50% of SKUs represent the 50%.
+- Type B Products: 30% of SKUs represent the 30%.
+- Type C Products: 20% of SKUs represent the 20%.
+
+Insights and potential analysis:
+- This case is very particular and we can have 2 options:
+  1. All the goods are slow moving: The best strategy is to spend as less as possible in a manual solution (shelves or racks). Additionally, try to work with the Marketing team to improve the rotation of the goods with promotions or marketing campaign.
+  2. All the goods are fast moving: If the size of the procucts is small, we can evaluate a goods to person technology as Shuttles.
+ 
+## Next Steps:
+
+1. Create a project to define the ABC Classification curves that are recommended for each Goods to person techonoly:
+     - Autostore
+     - AGVs (Automated Guided Vehicules)
+     - Shuttle.
+     - Others.
+  
+2. With real data of different industries, determine the curves, identify differences of each curves regarding of the industry like:
+    - Ecommerce.
+    - Store Retail.
+    - Whole Sales.
+    - Automotive industry.
+    - Others.
+  
+I hope that you find usefull this analysis and information, please if you have any doubt or comment dont hesitate to mentione it. If you have some specific question, i will be very happy to recive it and find a potential solution or create a new project. 
 
 
 
