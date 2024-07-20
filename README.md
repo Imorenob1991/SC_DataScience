@@ -22,8 +22,19 @@ The most common curve is going to be represented by the 80:20 rule , but regardi
 
 ### 80:20 Example of ABC Classification
 
-<img width="537" alt="Screenshot 2024-07-20 at 09 16 26" src="https://github.com/user-attachments/assets/3176d7f6-0b3c-4885-a446-99d710005ee6">
+<img width="612" alt="image" src="https://github.com/user-attachments/assets/9e6d0fc3-2a74-4902-a83f-297b9c756c7b">
 
+Descriptive Analysis:
+- Type A Product: 20% of SKUs represent the 80% of total sales and are fast moving goods.
+- Type B Products: 30% of SKUs represent the 15% of total sales and are regular moving goods.
+- Type C Products: 50% of SKUs represent the 5% of the total sales and are slow moving goods.
+
+Insights and potential analysis:
+- It is recommended that fast moving goods or Type A Products have to be stored in the ubication that require minimun store or warehouse transits, regarding of the Layout.
+- Additionally, the A Products have a high possibility of being sold, so we can decide to stock these type of products in a location closer to our clients to improve our service level.
+- This type of curve is suitable for Autostore Automation Goods to Person Technology, but we need to dip dive in other factors like the logistics variables and the size of the products (Autostore is suitable for small items)
+
+- 
 
 
 
