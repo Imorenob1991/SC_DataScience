@@ -1,6 +1,5 @@
 # SC_Data_Science_ABC_Slotting
 
-library(tidyverse)
 library(ggplot2)
 library(dplyr)
 library(tidyr)
