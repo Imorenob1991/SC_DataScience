@@ -16,7 +16,7 @@ Common ABC Classification:
 
 Before defining the type of products, it is important to sort the database from the product with the highest sales (first row) to the product with the lowest sales (last row), in a defined period of time (days, weeks, months, years).
 
-The most common curve is going to be represented by the 80:20 rule , but regarding of the industry and strategy of each company, you will see different curves like: 70:30 or 50:50. This is mainly affected by the type of industry and the planning strategy of assortment. 
+The most common curve is going to be represented by the 80:20 rule , but regarding of the industry and strategy of each company, you will see different curves like: 70:30 or 50:50. This is mainly affected by the type of industry and the assortment strategy.
 
 ## Graphical ABC Classification examples using the Pareto Principle
 
