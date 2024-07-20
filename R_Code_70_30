@@ -1,10 +1,3 @@
-# SC_Data_Science_ABC_Slotting
-
-library(ggplot2)
-library(dplyr)
-library(tidyr)
-library(stringr)
-
 ## 70:30 ABC Curve Example
 
 Classification2 <-c("(0,0)","A","B","C")
@@ -30,7 +23,7 @@ ABC_70_30$Cumulative_SKU2 <- cumsum(ABC_70_30$SKU2)
 ggplot(ABC_70_30, aes(x = Cumulative_SKU2, y = Cumulative_Sales2, label = Classification2)) +
   geom_point(size = 3) +  # Scatter plot points
   geom_text(vjust = -0.5, hjust = 0.8, color = "black", fontface = "bold") +
-  geom_smooth(method = "loess", se = FALSE, color ="grey") +
+  geom_smooth(method = "loess", se = FALSE, color = "blue") +
   labs(title = "70:30 Pareto - Cumulative Sales/SKU",
        x = "Cumulative_SKU (%)",
        y = "Cumulative_Sales (%)") +
