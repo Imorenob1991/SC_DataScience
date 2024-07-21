@@ -22,7 +22,8 @@ The most common curve follows the 80:20 rule, but depending on the industry and 
 
 ### 80:20 Example of ABC Classification
 
-<img width="589" alt="80_20" src="https://github.com/user-attachments/assets/558804a0-36e0-48a8-854e-bf7dbd4d5801">
+<img width="682" alt="Screenshot 2024-07-21 at 10 47 04" src="https://github.com/user-attachments/assets/a2e37843-4f8f-43f1-9b4d-d55924de9071">
+
 
 Descriptive Analysis:
 - Type A Product: 20% of SKUs represent the 80% of total sales and are fast moving goods.
