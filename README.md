@@ -10,8 +10,11 @@ The Pareto Principle, formulated by Vilfredo Pareto in 1896, states that 80% of 
 ### Application in Supply Chains
 
 Common ABC Classification:
+
     - A Products: 20% of SKUs that generate 80% of total sales. These are usually referred to as fast-moving goods.
+    
     - B Products: 30% of SKUs that generate 15% of total sales. These are usually referred to as medium/regular moving goods.
+    
     - C Products: 50% of SKUs that generate 5% of total sales. These are usually referred to as slow-moving goods.
 
 Before defining the type of products, it is important to sort the database from the product with the highest sales (first row) to the product with the lowest sales (last row) within a defined period of time (days, weeks, months, years).
